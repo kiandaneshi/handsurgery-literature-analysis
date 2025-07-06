@@ -1,0 +1,109 @@
+
+    <style>
+    body { 
+        font-family: 'Times New Roman', serif; 
+        margin: 40px;
+        line-height: 1.6;
+    }
+    .table-title {
+        font-weight: bold;
+        font-size: 14pt;
+        margin-bottom: 10px;
+        text-align: left;
+    }
+    table { 
+        border-collapse: collapse; 
+        width: 100%; 
+        margin: 20px 0;
+        font-size: 10pt;
+        border: 1px solid #000;
+    }
+    th { 
+        border: 1px solid #000; 
+        padding: 8px; 
+        background-color: #f5f5f5;
+        font-weight: bold;
+        text-align: center;
+        font-size: 10pt;
+    }
+    td { 
+        border: 1px solid #000; 
+        padding: 8px; 
+        text-align: left;
+        font-size: 10pt;
+    }
+    .numeric {
+        text-align: right;
+    }
+    .footnote {
+        font-size: 9pt;
+        margin-top: 10px;
+        font-style: italic;
+    }
+    </style>
+    <div class="table-title">Table 3. Feature Engineering and Dataset Structure</div><table border="1" class="dataframe academic-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Feature Category</th>
+      <th>Count/Value</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Demographic Features</td>
+      <td>12</td>
+      <td>Age groups, demographics, patient characteristics</td>
+    </tr>
+    <tr>
+      <td>Injury/Procedure Features</td>
+      <td>18</td>
+      <td>Anatomical zones, injury types, procedure classifications</td>
+    </tr>
+    <tr>
+      <td>Surgical Intervention Features</td>
+      <td>15</td>
+      <td>Operative techniques, surgical approaches, complexity</td>
+    </tr>
+    <tr>
+      <td>Clinical Outcome Features</td>
+      <td>14</td>
+      <td>Success measures, complications, functional outcomes</td>
+    </tr>
+    <tr>
+      <td>Text-based Features (TF-IDF)</td>
+      <td>8</td>
+      <td>Semantic content from abstract text</td>
+    </tr>
+    <tr>
+      <td>Confidence and Quality Features</td>
+      <td>4</td>
+      <td>Documentation quality, extraction confidence</td>
+    </tr>
+    <tr>
+      <td>Total Engineered Features</td>
+      <td>71</td>
+      <td>Complete feature set for machine learning</td>
+    </tr>
+    <tr>
+      <td>Final Sample Size</td>
+      <td>43,249</td>
+      <td>Samples meeting quality criteria</td>
+    </tr>
+    <tr>
+      <td>Complication Risk Targets</td>
+      <td>43,249 (100%)</td>
+      <td>Binary classification: complication present/absent</td>
+    </tr>
+    <tr>
+      <td>Surgical Success Targets</td>
+      <td>17,735 (41.0%)</td>
+      <td>Binary classification: successful/unsuccessful outcome</td>
+    </tr>
+    <tr>
+      <td>Return to Function Targets</td>
+      <td>0 (insufficient data)</td>
+      <td>Continuous regression: time to function return</td>
+    </tr>
+  </tbody>
+</table><div class="footnote">TF-IDF = Term Frequency-Inverse Document Frequency</div>

@@ -1,0 +1,101 @@
+
+    <style>
+    body { 
+        font-family: 'Times New Roman', serif; 
+        margin: 40px;
+        line-height: 1.6;
+    }
+    .table-title {
+        font-weight: bold;
+        font-size: 14pt;
+        margin-bottom: 10px;
+        text-align: left;
+    }
+    table { 
+        border-collapse: collapse; 
+        width: 100%; 
+        margin: 20px 0;
+        font-size: 10pt;
+        border: 1px solid #000;
+    }
+    th { 
+        border: 1px solid #000; 
+        padding: 8px; 
+        background-color: #f5f5f5;
+        font-weight: bold;
+        text-align: center;
+        font-size: 10pt;
+    }
+    td { 
+        border: 1px solid #000; 
+        padding: 8px; 
+        text-align: left;
+        font-size: 10pt;
+    }
+    .numeric {
+        text-align: right;
+    }
+    .footnote {
+        font-size: 9pt;
+        margin-top: 10px;
+        font-style: italic;
+    }
+    </style>
+    <div class="table-title">Table 2. BioBERT Natural Language Processing Performance</div><table border="1" class="dataframe academic-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Processing Metric</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Total Abstracts Processed</td>
+      <td>43,726</td>
+    </tr>
+    <tr>
+      <td>High-Confidence Extractions</td>
+      <td>43,249</td>
+    </tr>
+    <tr>
+      <td>Processing Success Rate (%)</td>
+      <td>99.1</td>
+    </tr>
+    <tr>
+      <td>Mean Confidence Score</td>
+      <td>0.537</td>
+    </tr>
+    <tr>
+      <td>Confidence Score SD</td>
+      <td>0.095</td>
+    </tr>
+    <tr>
+      <td>Demographics Coverage (%)</td>
+      <td>32.5</td>
+    </tr>
+    <tr>
+      <td>Injury/Procedure Coverage (%)</td>
+      <td>57.0</td>
+    </tr>
+    <tr>
+      <td>Surgical Interventions Coverage (%)</td>
+      <td>28.0</td>
+    </tr>
+    <tr>
+      <td>Clinical Outcomes Coverage (%)</td>
+      <td>39.9</td>
+    </tr>
+    <tr>
+      <td>Mean Entities per Abstract</td>
+      <td>2.39</td>
+    </tr>
+    <tr>
+      <td>BioBERT Model</td>
+      <td>dmis-lab/biobert-base-cased-v1.1</td>
+    </tr>
+    <tr>
+      <td>Confidence Threshold</td>
+      <td>0.3</td>
+    </tr>
+  </tbody>
+</table><div class="footnote">Coverage represents percentage of abstracts containing specified entity types</div>

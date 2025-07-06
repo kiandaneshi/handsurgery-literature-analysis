@@ -1,0 +1,12 @@
+Feature Category,Count/Value,Description
+Demographic Features,12,"Age groups, demographics, patient characteristics"
+Injury/Procedure Features,18,"Anatomical zones, injury types, procedure classifications"
+Surgical Intervention Features,15,"Operative techniques, surgical approaches, complexity"
+Clinical Outcome Features,14,"Success measures, complications, functional outcomes"
+Text-based Features (TF-IDF),8,Semantic content from abstract text
+Confidence and Quality Features,4,"Documentation quality, extraction confidence"
+Total Engineered Features,71,Complete feature set for machine learning
+Final Sample Size,"43,249",Samples meeting quality criteria
+Complication Risk Targets,"43,249 (100%)",Binary classification: complication present/absent
+Surgical Success Targets,"17,735 (41.0%)",Binary classification: successful/unsuccessful outcome
+Return to Function Targets,0 (insufficient data),Continuous regression: time to function return

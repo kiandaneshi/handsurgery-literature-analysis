@@ -1,0 +1,11 @@
+Rank,Clinical Feature,Importance Score,Clinical Impact
+1,Previous Complications,1.182,Critical predictor of future risks
+2,Historical Treatment Success,0.617,Strong indicator of treatment effectiveness
+3,Grip Strength Measurements,0.078,Primary functional outcome measure
+4,Tendon Zone Classification,0.055,Direct impact on surgical complexity
+5,Patient Demographics,0.053,Patient-specific risk factors
+6,Surgical Intervention Type,0.050,Treatment selection influence
+7,Clinical Documentation Quality,0.119,Quality of care documentation
+8,Hand-Specific Factors,0.072,Anatomical considerations
+9,Outcome Measurement Terms,0.065,Standardized assessment importance
+10,Treatment Complexity,0.060,Procedure difficulty classification

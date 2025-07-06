@@ -1,0 +1,63 @@
+After collecting abstracts, process them using BioBERT for clinical entity recognition and relationship extraction. Use the Hugging Face model dmis-lab/biobert-base-cased-v1.1, and perform inference using the transformers and torch libraries.
+
+Key information to extract from each abstract:
+
+Demographic Data: age group, gender, population type (e.g., pediatric, elderly)
+
+Injury/Procedure Characteristics: tendon zone, fracture type, nerve type, anatomical location
+
+Surgical Interventions: grafting, fixation, nerve decompression, occupational therapy, splinting
+
+Clinical Outcomes: grip strength, range of motion (ROM), pain reduction, reoperation rate, return-to-work time, complication rates
+
+Use rule-based enhancement where BioBERT is ambiguous, and assign a confidence score to each abstract based on completeness and clarity of extracted entities. Filter out low-confidence results (e.g., score < 0.3).
+
+🧱 3. Structured Data Conversion
+Map NLP outputs into structured features appropriate for ML modeling:
+
+Age Group: pediatric (0–18), adult (19–65), elderly (65+)
+
+Zone & Injury Type: e.g., Zone II flexor injury, metacarpal fracture, radial nerve repair
+
+Treatment Types: encoded as binary or ordinal features
+
+Outcomes:
+
+Binary: complication (yes/no), surgical success (yes/no)
+
+Continuous: days to functional recovery, change in grip strength (if extractable)
+
+Normalize and encode variables using one-hot encoding or ordinal scales.
+
+📊 4. Machine Learning Modeling
+Train three predictive models using structured data:
+
+Complication Risk (Binary classification)
+
+Return to Function (e.g., work) (Regression)
+
+Surgical Outcome Success (Binary classification)
+
+Use:
+
+Logistic Regression, Random Forest, and XGBoost for classification tasks
+
+XGBoost Regressor for continuous predictions (e.g., healing time)
+
+Split your dataset (80/20 train/test), and use 5-fold cross-validation for model robustness. Evaluate performance using:
+
+Classification: AUC-ROC, accuracy, F1-score, sensitivity, specificity
+
+Regression: R², RMSE, MAE
+
+📈 5. Visualization and Interpretation
+Produce:
+
+ROC curves and feature importance plots for each model
+
+Scatter plots for predicted vs. actual healing times
+
+Tables summarizing the top predictive features (e.g., age, zone, procedure type)
+
+Interpret model behavior in the context of clinical knowledge (e.g., Zone II injuries associated with higher reoperation risk).
+

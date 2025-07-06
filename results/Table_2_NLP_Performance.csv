@@ -1,0 +1,13 @@
+Processing Metric,Value
+Total Abstracts Processed,"43,726"
+High-Confidence Extractions,"43,249"
+Processing Success Rate (%),99.1
+Mean Confidence Score,0.537
+Confidence Score SD,0.095
+Demographics Coverage (%),32.5
+Injury/Procedure Coverage (%),57.0
+Surgical Interventions Coverage (%),28.0
+Clinical Outcomes Coverage (%),39.9
+Mean Entities per Abstract,2.39
+BioBERT Model,dmis-lab/biobert-base-cased-v1.1
+Confidence Threshold,0.3

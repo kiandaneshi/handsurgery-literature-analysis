@@ -1,0 +1,26 @@
+{
+  "pipeline_completion_time": "2025-07-06T13:43:48.321798",
+  "dataset_size": {
+    "samples": 43249,
+    "features": 71,
+    "target_variables": [
+      "complication_risk",
+      "return_to_function",
+      "surgical_success"
+    ]
+  },
+  "model_performance": {
+    "Complication Risk": [
+      "XGBoost",
+      0.9804993771042481
+    ],
+    "Surgical Success": [
+      "XGBoost",
+      0.8965865088993403
+    ]
+  },
+  "file_outputs": {
+    "ml_results": "results/ml_results_20250706_134348.pkl",
+    "clinical_interpretation": "results/clinical_interpretation_20250706_134348.json"
+  }
+}

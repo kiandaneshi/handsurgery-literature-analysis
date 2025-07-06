@@ -1,0 +1,126 @@
+
+    <style>
+    body { 
+        font-family: 'Times New Roman', serif; 
+        margin: 40px;
+        line-height: 1.6;
+    }
+    .table-title {
+        font-weight: bold;
+        font-size: 14pt;
+        margin-bottom: 10px;
+        text-align: left;
+    }
+    table { 
+        border-collapse: collapse; 
+        width: 100%; 
+        margin: 20px 0;
+        font-size: 10pt;
+        border: 1px solid #000;
+    }
+    th { 
+        border: 1px solid #000; 
+        padding: 8px; 
+        background-color: #f5f5f5;
+        font-weight: bold;
+        text-align: center;
+        font-size: 10pt;
+    }
+    td { 
+        border: 1px solid #000; 
+        padding: 8px; 
+        text-align: left;
+        font-size: 10pt;
+    }
+    .numeric {
+        text-align: right;
+    }
+    .footnote {
+        font-size: 9pt;
+        margin-top: 10px;
+        font-style: italic;
+    }
+    </style>
+    <div class="table-title">Table 5. Clinical Feature Importance Rankings for Optimal Model (XGBoost)</div><table border="1" class="dataframe academic-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Rank</th>
+      <th>Clinical Feature</th>
+      <th>Importance Score</th>
+      <th>Feature Type</th>
+      <th>Clinical Domain</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Previous Complications</td>
+      <td>1.182</td>
+      <td>Categorical (Binary)</td>
+      <td>Outcome History</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Historical Treatment Success</td>
+      <td>0.617</td>
+      <td>Categorical (Binary)</td>
+      <td>Treatment Efficacy</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Clinical Documentation Quality</td>
+      <td>0.119</td>
+      <td>Continuous</td>
+      <td>Documentation Quality</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Grip Strength Measurements</td>
+      <td>0.078</td>
+      <td>Categorical (Binary)</td>
+      <td>Functional Assessment</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Hand-Specific Term Frequency</td>
+      <td>0.072</td>
+      <td>Continuous (TF-IDF)</td>
+      <td>Anatomical Specificity</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Outcome Measurement Terms</td>
+      <td>0.065</td>
+      <td>Continuous (TF-IDF)</td>
+      <td>Outcome Measurement</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Study Documentation Length</td>
+      <td>0.063</td>
+      <td>Continuous</td>
+      <td>Study Comprehensiveness</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Treatment Complexity Terms</td>
+      <td>0.060</td>
+      <td>Continuous (TF-IDF)</td>
+      <td>Intervention Complexity</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Tendon Zone Classification</td>
+      <td>0.055</td>
+      <td>Categorical (Multi-class)</td>
+      <td>Injury Classification</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Patient-Related Factors</td>
+      <td>0.053</td>
+      <td>Continuous (TF-IDF)</td>
+      <td>Patient Characteristics</td>
+    </tr>
+  </tbody>
+</table><div class="footnote">Importance scores derived from XGBoost gain-based feature importance for complication risk prediction task</div>

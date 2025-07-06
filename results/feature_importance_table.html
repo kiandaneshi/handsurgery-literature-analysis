@@ -1,0 +1,111 @@
+
+    <style>
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 40px; }
+    table { 
+        border-collapse: collapse; 
+        width: 100%; 
+        margin: 20px 0;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    th, td { 
+        border: 1px solid #e0e0e0; 
+        padding: 14px; 
+        text-align: left; 
+    }
+    th { 
+        background: linear-gradient(135deg, #2E86AB, #A23B72); 
+        color: white; 
+        font-weight: bold;
+        text-align: center;
+    }
+    tr:nth-child(even) { 
+        background-color: #f8f9fa; 
+    }
+    tr:hover {
+        background-color: #e3f2fd;
+        transition: background-color 0.3s;
+    }
+    h1 {
+        color: #2E86AB;
+        border-bottom: 3px solid #A23B72;
+        padding-bottom: 10px;
+    }
+    .summary {
+        background-color: #f0f8ff;
+        padding: 20px;
+        border-left: 5px solid #2E86AB;
+        margin: 20px 0;
+    }
+    </style>
+    <h1>Top Clinical Features for Outcome Prediction</h1><div class="summary">Most important clinical features identified by machine learning models for predicting surgical outcomes and complications.</div><table border="1" class="dataframe" id="importance">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Rank</th>
+      <th>Clinical Feature</th>
+      <th>Importance Score</th>
+      <th>Clinical Impact</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Previous Complications</td>
+      <td>1.182</td>
+      <td>Critical predictor of future risks</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Historical Treatment Success</td>
+      <td>0.617</td>
+      <td>Strong indicator of treatment effectiveness</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Grip Strength Measurements</td>
+      <td>0.078</td>
+      <td>Primary functional outcome measure</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Tendon Zone Classification</td>
+      <td>0.055</td>
+      <td>Direct impact on surgical complexity</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Patient Demographics</td>
+      <td>0.053</td>
+      <td>Patient-specific risk factors</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Surgical Intervention Type</td>
+      <td>0.050</td>
+      <td>Treatment selection influence</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Clinical Documentation Quality</td>
+      <td>0.119</td>
+      <td>Quality of care documentation</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Hand-Specific Factors</td>
+      <td>0.072</td>
+      <td>Anatomical considerations</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Outcome Measurement Terms</td>
+      <td>0.065</td>
+      <td>Standardized assessment importance</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Treatment Complexity</td>
+      <td>0.060</td>
+      <td>Procedure difficulty classification</td>
+    </tr>
+  </tbody>
+</table>
