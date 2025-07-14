@@ -1,0 +1,12 @@
+include README.md
+include LICENSE
+include package_requirements.txt
+include .gitignore
+recursive-include src *.py
+recursive-include examples *.py
+recursive-include tests *.py
+recursive-include data .gitkeep
+recursive-include results .gitkeep
+recursive-include figures .gitkeep
+recursive-include models .gitkeep
+include pyproject.toml
