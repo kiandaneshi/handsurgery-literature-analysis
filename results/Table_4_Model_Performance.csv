@@ -1,7 +1,0 @@
-Prediction Task,Algorithm,Accuracy (%),F1-Score (%),AUC-ROC,Sensitivity (%),Specificity (%),CV Mean ± SD (%)
-Complication Risk,Logistic Regression,97.9,97.1,0.979,97.5,97.5,97.5 ± 0.2
-Complication Risk,Random Forest,97.9,97.3,0.979,97.6,97.6,97.6 ± 0.1
-Complication Risk,XGBoost,98.0,97.3,0.980,97.7,97.7,97.7 ± 0.1
-Surgical Success,Logistic Regression,89.2,75.2,0.798,89.3,89.3,89.3 ± 0.4
-Surgical Success,Random Forest,88.7,77.6,0.816,88.3,88.3,88.3 ± 0.6
-Surgical Success,XGBoost,89.7,89.9,0.875,89.4,89.4,89.4 ± 0.5
