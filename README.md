@@ -44,6 +44,11 @@ This project represents the largest computational analysis of hand surgery liter
 
 ## 🚀 Quick Start
 
+### Citation(s)
+Daneshi, K. (2025) ‘Hand Surgery Literature Analysis: End-to-End Data Extraction and Modeling Pipeline v3’. Zenodo. doi: 10.5281/zenodo.15880448. (Harvard style)
+
+Methods paper is currently in the works.
+
 ### Installation
 
 ```bash
